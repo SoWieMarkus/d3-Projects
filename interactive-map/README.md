@@ -21,9 +21,9 @@ With the JavaScript library d3.js, a map can now simply be built from this geogr
 
 Change the scale and the center of the projection.
 
-'''let projection = d3.geoMercator()
+```let projection = d3.geoMercator()
         .scale(7000)
         .center([13.458333, 50.929472])
-        .translate([width / 2, height / 2]);'''
+        .translate([width / 2, height / 2]);```
 
 
