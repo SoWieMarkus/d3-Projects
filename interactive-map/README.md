@@ -21,9 +21,34 @@ With the JavaScript library d3.js, a map can now simply be built from this geogr
 
 Change the scale and the center of the projection.
 
-```let projection = d3.geoMercator()
+```
+let projection = d3.geoMercator()
         .scale(7000)
         .center([13.458333, 50.929472])
-        .translate([width / 2, height / 2]);```
+        .translate([width / 2, height / 2]);
+```
+
+### Edit onClick
+
+```
+.on("click", function (d) {
+                if (d.properties.link === null) return;
+                window.location.href = window.location.href += d.properties.link;
+            })
+```
+
+### Style the map
+
+```
+let backgroundColor = "none"
+let hoverColor = "blue"
+let fillColor = "steelblue"
+let borderColor = "white"
+let borderHoverColor = "white"
+let borderWidth = "0.5px"
+let width = 500;
+let height = 300;
+```
+
 
 
