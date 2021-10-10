@@ -21,7 +21,7 @@ With the JavaScript library d3.js, a map can now simply be built from this geogr
 
 Change the scale and the center of the projection.
 
-```
+```javascript
 let projection = d3.geoMercator()
         .scale(7000)
         .center([13.458333, 50.929472])
@@ -30,7 +30,7 @@ let projection = d3.geoMercator()
 
 ### Edit onClick
 
-```
+```javascript
 .on("click", function (d) {
                 if (d.properties.link === null) return;
                 window.location.href = window.location.href += d.properties.link;
@@ -39,7 +39,7 @@ let projection = d3.geoMercator()
 
 ### Style the map
 
-```
+```javascript
 let backgroundColor = "none"
 let hoverColor = "blue"
 let fillColor = "steelblue"
