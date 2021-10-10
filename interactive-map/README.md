@@ -17,6 +17,16 @@ However, this data can still show errors. D3.js expects the data of the polygon 
 
 With the JavaScript library d3.js, a map can now simply be built from this geographic data. You can check out my code in for this. However, for your card to work properly, you will need to make some changes on your own.
 
+### Set ur own data source
+
+Change ```landkreise.geosjon``` to your data source.
+
+```javascript
+d3.queue()
+        .defer(d3.json, "landkreise.geojson")
+        .await(ready);
+```
+
 ### Configure the center of the map
 
 Change the scale and the center of the projection.
